@@ -13,10 +13,10 @@ def mean_median_mode(x: list) -> dict:
     
     mode_counter = Counter(x_arr)
     max_freq = max(mode_counter.values())
-    min_freq = min(k for k, v in mode_counter.items() if v == max_freq)
+    mode_value = min(k for k, v in mode_counter.items() if v == max_freq)
 
     return {
         "mean": float(mean_value),
         "median": float(median_value),
-        "mode": float(min_freq),
+        "mode": float(mode_value),
     }
