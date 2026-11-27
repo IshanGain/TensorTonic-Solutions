@@ -8,6 +8,4 @@ def dot_product(x: list, y: list) -> float:
     x_arr = np.asarray(x, dtype=float)
     y_arr = np.asarray(y, dtype=float)
 
-    result = np.dot(x_arr, y_arr)
-
-    return float(result)
+    return float(np.dot(x_arr, y_arr))
